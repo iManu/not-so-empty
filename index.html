@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="assets/css/font-awesome-ie7.min.css">
 <![endif]-->
   
-  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+  <script src="js/modernizr-2.6.1-respond-1.1.0.min.js"></script>
 </head>
 <body>
 <!--[if lt IE 9]>
@@ -32,7 +32,19 @@
   
   </footer>
   <!-- Javascript -->
-  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+  <script>
+    Modernizr.load([
+      {
+        load: '//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.2/jquery.min.js',
+        complete: function () {
+          if ( !window.jQuery ) Modernizr.load('js/jquery-1.8.2.min.js');
+        }
+      },
+      {
+        load: 'js/script.js'
+      }
+    ]);
+  </script>
   <!--
   Merci @twitter, @mdo et @fat.
   Bootstrap code licensed under the Apache License v2.0
