@@ -38,7 +38,6 @@ header("Content-Type: text/html; charset=utf-8");
   <script>
     Modernizr.load([
       {
-       
 		both : [ '//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.2/jquery.min.js', 'js/script.js' ],
         complete: function () {
           if ( !window.jQuery ) Modernizr.load('js/jquery-1.8.2.min.js');
