@@ -1,3 +1,6 @@
+<?php
+header("Content-Type: text/html; charset=utf-8");
+?>
 <!doctype html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -35,13 +38,12 @@
   <script>
     Modernizr.load([
       {
-        load: '//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.2/jquery.min.js',
+       
+		both : [ '//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.2/jquery.min.js', 'js/script.js' ],
         complete: function () {
           if ( !window.jQuery ) Modernizr.load('js/jquery-1.8.2.min.js');
+		  
         }
-      },
-      {
-        load: 'js/script.js'
       }
     ]);
   </script>
