@@ -13,7 +13,7 @@ header("Content-Type: text/html; charset=utf-8");
   
 	<title>gabarit initializr</title>
   
-  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css"> <!-- http://fortawesome.github.com/Font-Awesome/ -->
 <!--[if IE 7]>
   <link rel="stylesheet" href="assets/css/font-awesome-ie7.min.css">
 <![endif]-->
@@ -26,13 +26,13 @@ header("Content-Type: text/html; charset=utf-8");
 <![endif]-->
 	<!-- ===================== HEADER -->
   <header>
-  
+	<i class="icon-tags"></i>
   </header>
   <!-- ===================== MAIN -->
-  
+	<i class="icon-thumbs-up"></i>
   <!-- ===================== FOOTER -->
   <footer>
-  
+	<i class="icon-cogs"></i>
   </footer>
   <!-- Javascript -->
   <script>
