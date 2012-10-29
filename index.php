@@ -17,7 +17,7 @@ header("Content-Type: text/html; charset=utf-8");
 <!--[if IE 7]>
   <link rel="stylesheet" href="assets/css/font-awesome-ie7.min.css">
 <![endif]-->
-  
+  <link rel="stylesheet" href="css/style.css">
   <script src="js/modernizr-2.6.1-respond-1.1.0.min.js"></script>
 </head>
 <body>
@@ -25,14 +25,14 @@ header("Content-Type: text/html; charset=utf-8");
     <p class="chromeframe"><i class="icon-warning-sign">&nbsp;</i>Vous utilisez un navigateur obsol&egrave;te. <a href="http://browsehappy.com/">Mettez &agrave; jour votre navigateur aujourd'hui</a> ou <a href="http://www.google.com/chromeframe/?redirect=true">installez Google Chrome Frame</a> pour mieux visualiser cette page.</p>
 <![endif]-->
 	<!-- ===================== HEADER -->
-  <header>
+  <header class="test">
 	<i class="icon-tags"></i>
   </header>
   <!-- ===================== MAIN -->
 	<i class="icon-thumbs-up"></i>
   <!-- ===================== FOOTER -->
-  <footer>
-	<i class="icon-cogs"></i>
+  <footer class="test">
+	<div class="test icon-cogs"> bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla</div>
   </footer>
   <!-- Javascript -->
   <script>
