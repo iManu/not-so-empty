@@ -10,9 +10,9 @@ header("Content-Type: text/html; charset=utf-8");
 	<meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width">
-  
+
 	<title>gabarit initializr</title>
-  
+
   <link rel="stylesheet" href="css/font-awesome.min.css"> <!-- http://fortawesome.github.com/Font-Awesome/ -->
 <!--[if IE 7]>
   <link rel="stylesheet" href="assets/css/font-awesome-ie7.min.css">
@@ -38,10 +38,11 @@ header("Content-Type: text/html; charset=utf-8");
   <script>
     Modernizr.load([
       {
-		both : [ '//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.2/jquery.min.js', 'js/script.js' ],
+        both : [ '//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.2/jquery.min.js', 'js/script.js' ],
         complete: function () {
-          if ( !window.jQuery ) Modernizr.load('js/jquery-1.8.2.min.js');
-		  
+          if ( !window.jQuery ) {
+            Modernizr.load('js/jquery-1.8.2.min.js');
+          }
         }
       }
     ]);
